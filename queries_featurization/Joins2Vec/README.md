@@ -3,24 +3,20 @@
 This repository contains the "tensorflow" implementation of our paper "Joins2vec". The implementation is from the paper: subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs.
 This code is developed in python 2.7. It is ran and tested on Ubuntu 18.04 and 20.04.
 The input of the this method is the join schame of a database, which is represented as an undirected graph.
+Each join relationship is represented as a subgraph in the join schema.
 
 ##### Before running
-Install the python packages mentioned in the requirement.txt file:
+Install the python packages mentioned in the `requirement.txt` file:
 
 
-#####  The procedure for setting up subgraph2vec is as follows:
-	1. git clone the repository (command: git clone https://github.com/MLDroid/subgraph2vec_tf.git )
-	2. untar the data.tar.gz tarball
-
-#####  The procedure for obtaining rooted subgraph vectors using subgraph2vec and performing graph classification is as follows:
-	1. move to the folder "src" (command: cd src) (also make sure that kdd 2015 paper's (Deep Graph Kernels) datasets are available in '../data/kdd_datasets/dir_graphs/')
-	2. run main.py --corpus <dataset of graph files> --class_labels_file_name <file containing class labels of graphs to be used for graph classification> file to:
+#####  Obtain the rooted Join vectors using subgraph2vec:
+	1. move to the folder "Joins2Vec" (command: cd Joins2Vec)
+	2. make sure that the information if the join schema is available in the same rep'../example_dataset/datasets/dir_graphs/')
+	3. run main.py --corpus <dataset of graph files> --class_labels_file_name <file containing class labels>:
 		*Generate the weisfeiler-lehman kernel's rooted subgraphs from all the graphs 
-		*Train skipgram model to learn subgraph embeddings. The same will be dumped in ../embeddings/ folder
-		*Perform graph classification using graph kernel and deep graph kernel
+		*Train skipgram model to learn Joins embeddings. 
 	3. example: 
-		*python main.py --corpus ../data/kdd_datasets/mutag --class_labels_file_name ../data/kdd_datasets/mutag.Labels 
-		*python main.py --corpus ../data/kdd_datasets/proteins --class_labels_file_name ../data/kdd_datasets/proteins.Labels --batch_size 16 --embedding_size 128 --num_negsample 5
+		*python main.py --corpus ../example_data/datasets/node_edges --class_labels_file_name ../example_data/datasets/node.Labels
 	
 
 #### Other command line args:
@@ -49,9 +45,3 @@ Install the python packages mentioned in the requirement.txt file:
 				        feature extraction from graphs
 		--wlk_h WLK_H         Height of WL kernel (i.e., degree of rooted subgraph
 				        features to be considered for representation learning)
-		-lf LABEL_FILED_NAME, --label_filed_name LABEL_FILED_NAME
-				        Label field to be used for coloring nodes in graphs
-				        using WL kenrel
-		-v VALID_SIZE, --valid_size VALID_SIZE
-				        Number of samples to validate training process from
-				        time to time
