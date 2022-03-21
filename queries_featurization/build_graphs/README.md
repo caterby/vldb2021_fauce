@@ -20,4 +20,4 @@ In Fauce, `x` and `y` represent a pair of clumns with real-valued numbers in a T
 
 ## Example
 
-We include two examples, 
+We include two examples, `full_data_12_19_new_CHKK_cluster1.csv` and `x`
