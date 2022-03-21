@@ -21,27 +21,22 @@ Install the python packages mentioned in the `requirement.txt` file:
 
 #### Other command line args:
 	optional arguments:
-	        -h, --help            show this help message and exit
-		-c CORPUS,              --corpus CORPUS
-				        Path to directory containing graph files to be used
-				        for graph classification or clustering
+	        -h, --help              Show this help message and exit
+		-c CORPUS,          --corpus CORPUS
+				        Path to directory containing graph files to be used for graph classification or clustering
 		-l CLASS_LABELS_FILE_NAME, --class_labels_file_name CLASS_LABELS_FILE_NAME
-				        File name containg the name of the sample and the
-				        class labels
-		-o OUTPUT_DIR, --output_dir OUTPUT_DIR
+				        File name containg the name of the sample and the class labels
+		-o OUTPUT_DIR,      --output_dir OUTPUT_DIR
 				        Path to directory for storing output embeddings
-		-b BATCH_SIZE, --batch_size BATCH_SIZE
+		-b BATCH_SIZE,      --batch_size BATCH_SIZE
 				        Number of samples per training batch
-		-e EPOCHS, --epochs EPOCHS
-				        Number of iterations the whole dataset of graphs is
-				        traversed
-		-d EMBEDDING_SIZE, --embedding_size EMBEDDING_SIZE
+		-e EPOCHS,          --epochs EPOCHS
+				        Number of iterations the whole dataset of graphs is traversed
+		-d EMBEDDING_SIZE,  --embedding_size EMBEDDING_SIZE
 				        Intended subgraph embedding size to be learnt
 		-neg NUM_NEGSAMPLE, --num_negsample NUM_NEGSAMPLE
 				        Number of negative samples to be used for training
-		-lr LEARNING_RATE, --learning_rate LEARNING_RATE
+		-lr LEARNING_RATE,  --learning_rate LEARNING_RATE
 				        Learning rate to optimize the loss function
-		--n_cpus N_CPUS       Maximum no. of cpu cores to be used for WL kernel
-				        feature extraction from graphs
-		--wlk_h WLK_H         Height of WL kernel (i.e., degree of rooted subgraph
-				        features to be considered for representation learning)
+		--n_cpus N_CPUS         Maximum no. of cpu cores to be used for WL kernel feature extraction from graphs
+		--wlk_h WLK_H           Height of WL kernel (degree of rooted subgraph features to be considered for representation learning)
