@@ -20,4 +20,4 @@ In Fauce, `x` and `y` represent a pair of clumns with real-valued numbers in a T
 
 ## Example
 
-We include two examples, `full_data_12_19_new_CHKK_cluster1.csv` and `full_data_12_19_new_zika_cluster1.csv`. The output of the columns dependency of this two files are contained in the files `x` and `y` respectively. The dependency is represented as a matrix, each element matrix[i][j] represents the dependency of Columns `i` and `j` in a Table. 
+We include two examples, `full_data_12_19_new_CHKK_cluster1.csv` and `full_data_12_19_new_zika_cluster1.csv`. The output of the columns dependency of this two files are contained in the files `matrix_12_19_CHKK_cluster1.csv` and `matrix_12_19_zika_cluster1.csv` respectively. The dependency is represented as a matrix, each element `matrix[i][j]` represents the dependency of Columns `i` and `j` in a Table. 
