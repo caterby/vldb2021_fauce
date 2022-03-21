@@ -2,13 +2,17 @@ Queries Featurization
 ======================================
 
 
-## Installation Instructions
+## To installation each componnent, check the three repositories for details. 
 
-To install, check the requirement.txt file to see the dependent python packes
+Check the `requirement.txt` file to see the dependent python packes
 
-## Algorithm Description
+## Description
 
-The RDC is a measure of nonlinear dependence between two (possibly
+The Queries Featurization mainly incudes three repositories:
+      1) `graph_embedding` includes the code to get the embedding results for the Tables and Columns. For the embeddings for the Tables, the input should          be an undirected join schema; for the embeddings for the Columns, the input should be either weighted or unweighted graphs for the columns                dependency.
+      2) `Joins2Vec` includes the code to get the embedding results for the Joins of a query. The input represent the information of the Join Schema.
+
+RDC is a measure of nonlinear dependence between two (possibly
 multidimensional) variables. A full description of the algorithm is given in
 the [2013 paper](https://papers.nips.cc/paper/5138-the-randomized-dependence-coefficient.pdf)
 by David Lopez-Paz, Philipp Hennig, and Bernhard Schoelkopf.
