@@ -13,16 +13,16 @@ Install the python packages mentioned in the `requirement.txt` file:
 	1. move to the folder "Joins2Vec" (command: cd Joins2Vec)
 	2. make sure that the information if the join schema is available in the same rep'../example_dataset/datasets/dir_graphs/')
 	3. run main.py --corpus <dataset of graph files> --class_labels_file_name <file containing class labels>:
-		*Generate the weisfeiler-lehman kernel's rooted subgraphs from all the graphs 
-		*Train skipgram model to learn Joins embeddings. 
+		1) Generate the weisfeiler-lehman kernel's rooted subgraphs from all the graphs 
+		2) Train skipgram model to learn Joins embeddings. 
 	3. example: 
-		*python main.py --corpus ../example_data/datasets/node_edges --class_labels_file_name ../example_data/datasets/node.Labels
+		1) python main.py --corpus ../example_data/datasets/node_edges --class_labels_file_name ../example_data/datasets/node.Labels
 	
 
 #### Other command line args:
 	optional arguments:
-		-h, --help            show this help message and exit
-		-c CORPUS, --corpus CORPUS
+	        -h, --help            show this help message and exit
+		-c CORPUS,              --corpus CORPUS
 				        Path to directory containing graph files to be used
 				        for graph classification or clustering
 		-l CLASS_LABELS_FILE_NAME, --class_labels_file_name CLASS_LABELS_FILE_NAME
