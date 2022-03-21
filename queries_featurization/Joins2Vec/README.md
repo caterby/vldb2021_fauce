@@ -1,16 +1,12 @@
-# subgraph2vec
+# Joins2vec
 
-This repository contains the "tensorflow" implementation of our paper "subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs". 
-The paper could be found at: https://arxiv.org/pdf/1606.08928.pdf 
+This repository contains the "tensorflow" implementation of our paper "Joins2vec". The implementation is from the paper: subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs.
+This code is developed in python 2.7. It is ran and tested on Ubuntu 18.04 and 20.04.
+The input of the this method is the join schame of a database, which is represented as an undirected graph.
 
+##### Before running
+Install the python packages mentioned in the requirement.txt file:
 
-#### Dependencies
-This code is developed in python 2.7. It is ran and tested on Ubuntu 14.04 and 16.04.
-It uses the following python packages:
-1. tensorflow (version == 0.12.1)
-2. networkx (version <= 1.11)
-3. joblib (version <= 0.11)
-4. scikit-learn (+scipy, +numpy)
 
 #####  The procedure for setting up subgraph2vec is as follows:
 	1. git clone the repository (command: git clone https://github.com/MLDroid/subgraph2vec_tf.git )
@@ -59,23 +55,3 @@ It uses the following python packages:
 		-v VALID_SIZE, --valid_size VALID_SIZE
 				        Number of samples to validate training process from
 				        time to time
-
-## Contact ##
-In case of queries, please email: annamala002@e.ntu.edu.sg OR XZHANG048@e.ntu.edu.sg
-
-#### Reference 
-
-	Please consider citing the follow paper when you use this code.
-	@article{narayanansubgraph2vec,
-	  title={subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs},
-	  author={Narayanan, Annamalai and Chandramohan, Mahinthan and Chen, Lihui and Liu, Yang and Saminathan, Santhoshkumar}
-	}
-
-## Acknowledgements ##
-Thanks to Zhang Xinyi (https://github.com/XinyiZ001) for the support on coding/testing subgraph2vec TF version.
-
-
-
-
-
-
