@@ -1,15 +1,10 @@
-RDC: Randomized Dependence Coefficient
+Queries Featurization
 ======================================
 
-*Algorithm by:* David Lopez-Paz, Philipp Hennig, and Bernhard Schoelkopf
-
-*Code by:* Gary Doran
 
 ## Installation Instructions
 
-To install, run:
-
-    $ [sudo] python setup.py install
+To install, check the requirement.txt file to see the dependent python packes
 
 ## Algorithm Description
 
