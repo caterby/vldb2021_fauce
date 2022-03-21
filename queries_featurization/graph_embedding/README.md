@@ -23,26 +23,15 @@ The supported input format is an edgelist:
 
 	node1_id_int node2_id_int <weight_float, optional>
 		
-The graph is assumed to be undirected and unweighted by default. These options can be changed by setting the appropriate flags.
+The graph is assumed to be undirected and unweighted by default. These options can be changed by setting the appropriate flags. This impplemeation is from the Grover's KDD paper
 
 #### Output
-The output file has *n+1* lines for a graph with *n* vertices. 
 The first line has the following format:
 
 	num_of_nodes dim_of_representation
 
-The next *n* lines are as follows:
+The next lines are as follows:
 	
 	node_id dim1 dim2 ... dimd
 
-where dim1, ... , dimd is the *d*-dimensional representation learned by *node2vec*.
-
-### Citing
-If you find *node2vec* useful for your research, please consider citing the following paper:
-
-	@inproceedings{node2vec-kdd2016,
-	author = {Grover, Aditya and Leskovec, Jure},
-	 title = {node2vec: Scalable Feature Learning for Networks},
-	 booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-	 year = {2016}
-	}
+where dim1, ... , dimd is the *d*-dimensional representation learned by the graoh embedding method.
