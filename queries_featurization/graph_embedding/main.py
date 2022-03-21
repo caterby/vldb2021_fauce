@@ -1,14 +1,3 @@
-'''
-Reference implementation of node2vec. 
-
-Author: Aditya Grover
-
-For more details, refer to the paper:
-node2vec: Scalable Feature Learning for Networks
-Aditya Grover and Jure Leskovec 
-Knowledge Discovery and Data Mining (KDD), 2016
-'''
-
 import argparse
 import numpy as np
 import networkx as nx
@@ -27,23 +16,23 @@ def parse_args():
 	parser.add_argument('--output', nargs='?', default='emb/karate.emb',
 	                    help='Embeddings path')
 
-	parser.add_argument('--dimensions', type=int, default=128,
-	                    help='Number of dimensions. Default is 128.')
+	parser.add_argument('--dimensions', type=int, default=4,
+	                    help='Number of dimensions. Default is 4.')
 
-	parser.add_argument('--walk-length', type=int, default=80,
-	                    help='Length of walk per source. Default is 80.')
+	parser.add_argument('--walk-length', type=int, default=4,
+	                    help='Length of walk per source. Default is 4.')
 
-	parser.add_argument('--num-walks', type=int, default=10,
-	                    help='Number of walks per source. Default is 10.')
+	parser.add_argument('--num-walks', type=int, default=3,
+	                    help='Number of walks per source. Default is 3.')
 
-	parser.add_argument('--window-size', type=int, default=10,
-                    	help='Context size for optimization. Default is 10.')
+	parser.add_argument('--window-size', type=int, default=3,
+                    	help='Context size for optimization. Default is 3.')
 
 	parser.add_argument('--iter', default=1, type=int,
                       help='Number of epochs in SGD')
 
-	parser.add_argument('--workers', type=int, default=8,
-	                    help='Number of parallel workers. Default is 8.')
+	parser.add_argument('--workers', type=int, default=1,
+	                    help='Number of parallel workers. Default is 1.')
 
 	parser.add_argument('--p', type=float, default=1,
 	                    help='Return hyperparameter. Default is 1.')
