@@ -61,30 +61,28 @@ def parse_args():
     :return: all command line arguments read
     '''
     args = argparse.ArgumentParser("subgraph2vec")
-    # args.add_argument("--corpus", default = "wlfile/DrebinADGs_5k_malware/",
-    args.add_argument("-c","--corpus", default = "../data/kdd_datasets/ptc",
+    args.add_argument("-c","--corpus", default = "../example_data/datasets/node_edges",
                       help="Path to directory containing graph files to be used for graph classification or clustering")
 
-    args.add_argument('-l','--class_labels_file_name', default='../data/kdd_datasets/ptc.Labels',
+    args.add_argument('-l','--class_labels_file_name', default='../example_data/datasets/node.Labels',
                       help='File name containg the name of the sample and the class labels')
 
-    # args.add_argument("--output_dir", default = "embeddings/DrebinADGs_5k_malware/",
     args.add_argument('-o', "--output_dir", default = "../embeddings",
                       help="Path to directory for storing output embeddings")
 
-    args.add_argument('-b',"--batch_size", default=128, type=int,
+    args.add_argument('-b',"--batch_size", default=4, type=int,
                       help="Number of samples per training batch")
 
     args.add_argument('-e',"--epochs", default=3, type=int,
                       help="Number of iterations the whole dataset of graphs is traversed")
 
-    args.add_argument('-d',"--embedding_size", default=32, type=int,
+    args.add_argument('-d',"--embedding_size", default=4, type=int,
                       help="Intended subgraph embedding size to be learnt")
 
-    args.add_argument('-neg', "--num_negsample", default=10, type=int,
+    args.add_argument('-neg', "--num_negsample", default=4, type=int,
                       help="Number of negative samples to be used for training")
 
-    args.add_argument('-lr', "--learning_rate", default=1.0, type=float,
+    args.add_argument('-lr', "--learning_rate", default=0.01, type=float,
                       help="Learning rate to optimize the loss function")
 
     args.add_argument("--n_cpus", default=psutil.cpu_count(), type=int,
