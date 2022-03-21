@@ -1,7 +1,4 @@
 """
-Implements the Randomized Dependence Coefficient
-David Lopez-Paz, Philipp Hennig, Bernhard Schoelkopf
-
 http://papers.nips.cc/paper/5138-the-randomized-dependence-coefficient.pdf
 """
 import numpy as np
@@ -96,4 +93,4 @@ for i in range(len(array[0])):
     for j in range(len(array[0])):
         matrix[i][j]=rdc(array[:,i], array[:,j])
 my_df=pandas.DataFrame(matrix)
-my_df.to_csv('matrix_12_19_CHKK_cluster3.csv', index=False, header=False)
+my_df.to_csv('matrix_12_19_CHKK_cluster1.csv', index=False, header=False)
