@@ -1,22 +1,22 @@
-# node2vec
+# Graph Embedding
 
-This repository provides a reference implementation of *node2vec* as described in the paper:<br>
-> node2vec: Scalable Feature Learning for Networks.<br>
-> Aditya Grover and Jure Leskovec.<br>
-> Knowledge Discovery and Data Mining, 2016.<br>
-> <Insert paper link>
+The *embedding* algorithm learns continuous representations for nodes in any (un)directed, (un)weighted graph.
 
-The *node2vec* algorithm learns continuous representations for nodes in any (un)directed, (un)weighted graph. Please check the [project page](https://snap.stanford.edu/node2vec/) for more details. 
+### Before running
+(1) Get the Join Schema of a database, it is an undirected graph. Each node representd a Table in the database, the edges represent the PK and FK replationships among different tables. After we get the Join Schema, use it as the input for the python script to get the embedding results for each table. In Fauce, we use the IMDB dataset, the Join Schema can mannualy received.
+
+(2) Get the global columns-dependency graph of all the columns in the database, we calculate RDC for each pair to columns in the Tables to get this graph.
+The graph can be either unweighted or weighted. After we get this graph, use it as the input for the python script to get the embedding results for each columns in the database.
 
 ### Basic Usage
 
 #### Example
-To run *node2vec* on Zachary's karate club network, execute the following command from the project home directory:<br/>
-	``python src/main.py --input graph/karate.edgelist --output emb/karate.emd``
+To run the code, execute the following command from the project home directory:<br/>
+	``python main.py --input graph/graph.edgelist --output emb/graph_node.emd``
 
 #### Options
-You can check out the other options available to use with *node2vec* using:<br/>
-	``python src/main.py --help``
+You can check out the other options available to use by:<br/>
+	``python main.py --help``
 
 #### Input
 The supported input format is an edgelist:
@@ -46,10 +46,3 @@ If you find *node2vec* useful for your research, please consider citing the foll
 	 booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
 	 year = {2016}
 	}
-
-
-### Miscellaneous
-
-Please send any questions you might have about the code and/or the algorithm to <adityag@cs.stanford.edu>.
-
-*Note:* This is only a reference implementation of the *node2vec* algorithm and could benefit from several performance enhancement schemes, some of which are discussed in the paper.
