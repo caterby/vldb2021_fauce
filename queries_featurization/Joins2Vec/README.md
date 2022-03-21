@@ -1,6 +1,6 @@
 # Joins2vec
 
-This repository contains the "tensorflow" implementation of our paper "Joins2vec". The implementation is from the paper: subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs.
+This repository contains the "tensorflow" implementation of "Joins2vec". The implementation is from the paper: subgraph2vec: Learning Distributed Representations of Rooted Sub-graphs from Large Graphs.
 This code is developed in python 2.7. It is ran and tested on Ubuntu 18.04 and 20.04.
 The input of the this method is the join schame of a database, which is represented as an undirected graph.
 Each join relationship is represented as a subgraph in the join schema.
