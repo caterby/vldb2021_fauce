@@ -25,7 +25,7 @@ The repository `results` includes an example of the testing results, the error i
 
 #### Example
 To run the code, execute the following command from the project home directory:<br/>
-	``python train.py --dataset datasets/Joins_5_12_filters_error_log2 --output results/graph_node.emd``
+	``python train.py --dataset datasets/JOB_five_joins_training_dataset_log2 --output results/graph_node.emd``
 
 #### Options
 You can check out the other options available to use by:<br/>
