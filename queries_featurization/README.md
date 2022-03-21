@@ -10,9 +10,9 @@ Check the `requirement.txt` file to see the dependent python packes
 
 The Queries Featurization mainly incudes three repositories:
       
-      1) `graph_embedding` includes the code to get the embedding results for the Tables and Columns. For the embeddings for the Tables, the input should          be an undirected join schema; for the embeddings for the Columns, the input should be either weighted or unweighted graphs for the columns                dependency.
+1) `graph_embedding` includes the code to get the embedding results for the Tables and Columns. For the embeddings for the Tables, the input should        be an undirected join schema; for the embeddings for the Columns, the input should be either weighted or unweighted graphs for the columns                dependency.
       
-      2) `Joins2Vec` includes the code to get the embedding results for the Joins of a query. The input represent the information of the Join Schema.
+2) `Joins2Vec` includes the code to get the embedding results for the Joins of a query. The input represent the information of the Join Schema.
 
 RDC is a measure of nonlinear dependence between two (possibly
 multidimensional) variables. A full description of the algorithm is given in
