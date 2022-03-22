@@ -16,8 +16,10 @@ The queries featurization is done offline. Once the embedding results for the "T
 
   
 #### Models Training
-The model training part includes the models used in Fauce.
+The model training part includes the models used in Fauce:
 (1) We use the method in NeuroCard[1] to generate the training dataset;
+  
 (2) Once the training dataset is generated, we use the embedding results achieved in the queries featurization part to transform each query in the training dataset into vectors, the training dataset is stored in a csv file;
+  
 (3) Use the csv file as the input training dataset to train the model.
   
