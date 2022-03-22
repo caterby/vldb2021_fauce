@@ -16,6 +16,11 @@ The queries featurization is done offline. Once the embedding results for the "T
 
 The figure below shows an example of the quey featurization:
 
+<p align="center">
+    <br>
+    <img src="assets/featurization.pdf" width="450"/>
+<p>
+
   
 #### Models Training
 The model training part includes the models used in Fauce:
