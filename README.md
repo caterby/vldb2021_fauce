@@ -14,6 +14,8 @@ This part incudes the following components:
 
 The queries featurization is done offline. Once the embedding results for the "Tables", "Columns", "Joins", and Ranges are received, give an input query, it can be represented as four tuples: Tables, Columns, Joins, and Ranges, we can directly parse the queries and find the corresponding embding results for each tuple. Finally, we combine the embeding results together to get the queries featurization results.
 
+The figure below shows an example of the quey featurization:
+
   
 #### Models Training
 The model training part includes the models used in Fauce:
@@ -23,4 +25,4 @@ The model training part includes the models used in Fauce:
 (2) Once the training dataset is generated, we use the embedding results achieved in the queries featurization part to transform each query in the training dataset into vectors, the training dataset is stored in a .csv file.
   
 (3) Use the csv file as the input training dataset to train the model.
-  
+
