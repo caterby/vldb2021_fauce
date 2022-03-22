@@ -18,7 +18,7 @@ The figure below shows an example of the quey featurization:
 
 <p align="center">
     <br>
-    <img src="assets/featurization.png" width="450"/>
+    <img src="assets/featurization.png" width="800"/>
 <p>
 
   
