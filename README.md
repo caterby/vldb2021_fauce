@@ -12,7 +12,7 @@ This part incudes the following components:
 
 (4) Range representation for each columns with real-valued numbers. The ranges for each column can be achieved by traversing the columns in each "Table".
 
-The queries featurization is done offline. Once the embedding results for the "Tables", "Columns", "Joins", and Ranges are received, give an input query, it can be represented as four tuples: <Tables>, <Columns>, <Joins>, and Ranges, we can directly parse the queries and find the corresponding embding results for each tuple. Finally, we combine the embeding results together to get the queries featurization results.
+The queries featurization is done offline. Once the embedding results for the "Tables", "Columns", "Joins", and Ranges are received, give an input query, it can be represented as four tuples: Tables, Columns, Joins, and Ranges, we can directly parse the queries and find the corresponding embding results for each tuple. Finally, we combine the embeding results together to get the queries featurization results.
 
   
 #### Models Training
